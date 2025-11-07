@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>ToDoList</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  
 </head>
 <body>  
+    <div class="">   
+        <h1>ToDo</h1>
+        <h3>get your shit done type ish</h3>
+    </div>
 
+    <div class="">
+        <input type="text" id="input" >
+        <button onclick="addToList()">add</button>
+        <button onclick="clearLists()">clear</button>
+    </div>
+    
+    <h2>Todo</h2>
+    <div class="list">    </div>
+
+    <h2>Completed</h2>
+    <div class="completed"></div>
+
+    
+  <script src="index.js"></script>
 </body>
 </html>

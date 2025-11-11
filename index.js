@@ -54,3 +54,9 @@ function addToCompletedList(id) {
     list.removeChild(temp);
     completedList.appendChild(temp);
 }
+
+input.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        addToList();
+    }
+});

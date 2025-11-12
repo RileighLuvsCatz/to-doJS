@@ -37,7 +37,7 @@ function deleteItem(id) {
 
     } else if (todo.includes(id)) {
         list.removeChild(temp);
-        list.pop(id);
+        todo.pop(id);
     }
 }
 
@@ -54,6 +54,8 @@ function addToCompletedList(id) {
     list.removeChild(temp);
     completedList.appendChild(temp);
 }
+
+
 
 input.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {

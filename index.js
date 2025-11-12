@@ -57,6 +57,8 @@ function addToCompletedList(id) {
     completed.push(todo.pop(id));
     list.removeChild(temp);
     completedList.appendChild(temp);
+    const doneButton = temp.querySelector('button');
+    temp.removeChild(doneButton);
     saveToLocalStorage();
 }
 

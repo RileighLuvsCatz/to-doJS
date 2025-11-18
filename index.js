@@ -14,7 +14,7 @@ function addToList() {
     const newItem = document.createElement('div');
     newItem.setAttribute("id",input.value);
     const name = document.createElement('p');
-    name.innerText = input.value;
+    name.innerText = "- " + input.value;
     const done = document.createElement('button');
     done.setAttribute("onclick", `addToCompletedList('${input.value}')`);
     done.innerText = "Done!";

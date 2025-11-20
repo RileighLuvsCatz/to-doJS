@@ -91,7 +91,7 @@ function addToCompletedList(id) {
     const doneButton = temp.querySelector('#done-' + id);
     temp.removeChild(doneButton);
     //remap delete button
-    const deleteButton = temp.getElementById('#remove-' + id);
+    const deleteButton = temp.querySelector('#remove-' + id);
     deleteButton.addEventListener('click', () => deleteItem(id, 'completed'));
 
     saveToLocalStorage();
